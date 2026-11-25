@@ -103,3 +103,17 @@ footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 .pl iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+.hero{position:relative;background:#8b8b8b;overflow:hidden}
+.hero img{display:block;width:100%;height:clamp(380px,38vw,620px);object-fit:cover;object-position:76% 30%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#00000040,#0000 55%);pointer-events:none}
+.ht{position:absolute;z-index:2;left:max(var(--m),calc((100vw - var(--w))/2 + var(--m)));top:50%;transform:translateY(-50%);color:#fff;max-width:52%}
+.ht h1{font-weight:600;font-size:clamp(34px,4.6vw,72px);line-height:1.02;letter-spacing:-.03em}
+.ht .r1{font-weight:400;font-size:clamp(28px,3.8vw,60px);line-height:1.05;letter-spacing:-.025em;margin-top:2px}
+.ht .r2{font-size:clamp(14px,1.55vw,22px);margin-top:clamp(10px,1.2vw,18px)}
+.ab .pt img{width:100%;height:100%;object-fit:cover;display:block}
+.ab .pt{overflow:hidden}
+.bio p{font-family:var(--ser);font-size:clamp(18px,1.45vw,21px);line-height:1.65;max-width:38em;margin-bottom:1.2em}
+.bio p.bl{font-size:clamp(26px,3vw,42px);line-height:1.15;letter-spacing:-.015em;margin-bottom:.9em}
+@media(max-width:860px){.hero img{height:min(92vw,420px);object-position:74% 20%}.ht{position:static;transform:none;max-width:none;background:#7d7d7d;padding:22px var(--m) 28px}}
+@media(max-width:560px){.logo span{display:none}}

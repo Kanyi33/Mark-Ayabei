@@ -7,7 +7,8 @@ Files
   css/styles.css  all styling
   js/data.js      ALL CONTENT: films, other work, special projects, video links
   js/app.js       navigation, pages, player
-  media/          put posters / mp4 files here
+  media/          hero.jpg (Home banner, text removed - the name/titles are live text),
+                  portrait.jpg (Biography), plus posters / mp4 files
 
 Videos (js/data.js)
   Vimeo:   vimeo:'123456789'  (unlisted: '123456789/abcdef1234')
@@ -17,4 +18,4 @@ Videos (js/data.js)
   Poster image:    poster:'media/clench/poster.jpg'
   Showreel: reelVimeo:'...' (plays muted on loop, no controls) or reel:'media/reel.mp4'
 
-Menu: Home, Categories, Special Projects, Biography, Contact. Routes use #home, #categories, #special-projects, #biography, #contact, #clench, #wakariru, #road-home.
+Menu: Home, Categories (Films, TV series, Documentaries), Special Projects, Biography, Contact. Routes use #home, #categories, #special-projects, #biography, #contact, #clench, #wakariru, #road-home.
