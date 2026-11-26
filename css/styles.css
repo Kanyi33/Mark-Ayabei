@@ -102,6 +102,9 @@ footer .w{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 .pl iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* poster-only player (no trailer yet): show the whole poster at its own proportions, never cropped */
+.pl:has(>img){aspect-ratio:auto;background:none;overflow:visible}
+.pl>img{display:block;margin:0 auto;width:auto;max-width:100%;height:auto;max-height:min(88vh,980px)}
 
 .hero{position:relative;background:#8b8b8b;overflow:hidden}
 .hero img{display:block;width:100%;height:clamp(380px,38vw,620px);object-fit:cover;object-position:76% 30%}
@@ -151,4 +154,7 @@ div.th .im{cursor:default}
 .syn{font-size:clamp(17px,1.4vw,19px);line-height:1.65;max-width:62ch}
 .pr p,.pq{font-size:clamp(16px,1.2vw,18px);line-height:1.6;color:var(--fg)}
 @media(max-width:860px){.cimg{max-width:none;aspect-ratio:4/3;object-position:30% 52%}}
+/* poster cards with artwork keep their 3:4 shape even when last in a grid (the mobile full-width placeholder rule would crop them) */
+.ps .po:has(i[style*="url("]){grid-column:auto}
+.ps .po:has(i[style*="url("]) .im{aspect-ratio:3/4}
 @media(max-width:560px){.cimg{aspect-ratio:4/5;object-position:28% 45%}}
