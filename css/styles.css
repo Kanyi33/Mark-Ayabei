@@ -156,3 +156,42 @@ h1:focus{outline:none}
 
 .ft{padding-top:clamp(20px,3vw,36px)}
 .fp{display:block;width:100%;max-width:460px;height:auto}
+
+.fs{color:var(--mu);font-size:clamp(14px,1.3vw,17px)}
+.fro{margin-top:10px;font-size:clamp(14px,1.2vw,16px)}
+.fpb{display:block;width:clamp(72px,10vw,148px);padding:0;border:0;background:none;cursor:zoom-in;text-align:center;font:inherit;color:inherit}
+.fpb img{display:block;width:100%;height:auto;box-shadow:0 0 0 1px var(--ln);transition:transform .35s}
+.fpb:hover img{transform:translateY(-3px)}
+.fpb span{display:block;margin-top:8px}
+.pl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pg .pl video{object-fit:contain;background:#000}
+.lb2 .box.pbox{width:auto;max-width:100%;aspect-ratio:auto;background:none;display:grid;justify-items:center;gap:12px}
+.lb2 .pbox img{display:block;max-width:100%;max-height:calc(100vh - 150px);max-height:calc(100dvh - 150px);width:auto;height:auto;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.lb2 .pbox p{color:#fff;font-size:13px;letter-spacing:.04em;text-align:center}
+@media(max-height:520px){.pg .pl.f16{aspect-ratio:auto;height:62vh}.lb2 .pbox img{max-height:calc(100vh - 90px);max-height:calc(100dvh - 90px)}}
+
+
+/* film page */
+.fd{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:clamp(16px,4vw,56px);row-gap:clamp(16px,2.4vw,28px);align-items:start}
+.fd .fv,.fd .ft2,.fd .fa{grid-column:1/-1}
+.fd .fx{grid-column:1}.fd .fpb{grid-column:2}
+.nopo .fx{grid-column:1/-1}
+.fx h1.t{font-size:clamp(26px,3vw,46px);margin:6px 0 4px}
+.fvl{display:none}
+@media(min-width:1000px){
+.fd{grid-template-columns:auto minmax(0,1fr) minmax(0,1.25fr);grid-template-rows:auto 1fr;column-gap:clamp(28px,4vw,64px);row-gap:28px}
+.fd .fpb{grid-column:1;grid-row:1/3;width:fit-content}
+.fd .fpb img{width:auto;max-width:100%;height:clamp(420px,calc(100vh - 230px),860px);height:clamp(420px,calc(100dvh - 230px),860px)}
+.fd .fx{grid-column:2/4;grid-row:1}
+.fd .fa{grid-column:2;grid-row:2}
+.fd .fv{grid-column:3;grid-row:2}
+.fd .ft2{display:none}
+.fvl{display:block;margin-bottom:8px}
+.noaw .fv{grid-column:2/4}.novid .fa{grid-column:2/4}
+.fd.nopo{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)}
+.nopo .fx{grid-column:1/3}.nopo .fa{grid-column:1}.nopo .fv{grid-column:2}
+.nopo.noaw .fv{grid-column:1/3}.nopo.novid .fa{grid-column:1/3}
+.fd .fa,.fd .fv{align-self:start}
+}
+
+@media(min-width:1000px){.pn a{font-size:20px}}

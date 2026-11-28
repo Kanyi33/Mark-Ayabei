@@ -27,3 +27,5 @@ Menu: Home, Categories (Films, TV series, Documentaries), Special Projects, Biog
 Placeholders are hidden automatically: boxes without a video or poster simply do not render. Film synopses are not displayed. Add vimeo/src/poster in js/data.js and they appear.
 Film tiles are 16:9: set tile:"media/name.jpg" per film in js/data.js (use a film still when available; otherwise a crop of the poster).
 Other work items without video show as text rows; add a vimeoId (4th value) or thumbnail (6th) to make them clickable tiles.
+
+ADDING LINKS: see the instructions given with this build (Vimeo ID in js/data.js: vimeo:'ID' for films, reelVimeo for the showreel, 4th value for Other work items).
